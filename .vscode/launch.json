@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Run active C++ (LLDB)",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${fileDirname}/${fileBasenameNoExtension}",
+        "args": [],
+        "cwd": "${fileDirname}",
+        "MIMode": "lldb",
+        "preLaunchTask": "build active cpp",
+        "console": "integratedTerminal",
+        "stopAtEntry": false
+      }
+    ]
+  }
+  
