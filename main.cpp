@@ -2,6 +2,25 @@
 #include <limits>
 using namespace std;
 
+//úvod
+void introduction() {
+    cout << "\n";
+    cout << "Vitej ve hre Dusanova kariera — psychologickem unikovem dobrodruzstvi.\n\n";
+    cout << "V teto hre se stanes Dusanem, clovekem stojicim na krizovatce sveho zivota.\n";
+    cout << "Kazde tve rozhodnuti ovlivni jeho cestu — jeho motivaci, uspech i cestu na vrchol.\n\n";
+    cout << "Na kazdem kroku te cekaji tri moznosti.\n";
+    cout << "Rozhoduj se s rozvahou... protoze tve ciny urci, zda Dusan dosahne velikosti — nebo vse ztrati.\n\n";
+    cout << "Stiskni ENTER pro zahajeni sve cesty.\n";
+
+    cin.get();
+}
+
+// ==
+void line () {
+    cout << "==============================\n";
+}
+
+
 // funkce co čte volby
 int ctiVolbu(int minimum, int maximum) {
     int cislo;
@@ -53,8 +72,11 @@ void scena1() {
 }
 
 int main() {
-    cout << "KONTRAKT - textova hra" << endl;
-    cout << "(Volby zadavej cislem 1/2/3)" << endl;
+    line();
+    cout << "Vitejte v pribehove hre - Dusanova kariera.\n";
+    line ();
+    
+    introduction();
 
     scena1();  
 
